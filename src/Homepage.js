@@ -1,19 +1,18 @@
 import React from 'react';
-import styles from './css/homepage.css';
+import './css/HomePage.css';
 
-const Homepage = () => {
+const HomePage = () => {
   return (
     <div>
-      <header className={styles.header}>
-        <h1>Welcome</h1>
-        <nav>
-          <ul>
-            <a href="#about">About Us</a>
-          </ul>
-        </nav>
+      <header>
+        <h1>Welcome Page</h1>
       </header>
+      <div className="welcome-container">
+        <h1>Testing React Project</h1>
+        <p>DAS NA DAS</p>
+      </div>
     </div>
   );
-}
+};
 
-export default Homepage;
+export default HomePage;
