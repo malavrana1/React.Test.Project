@@ -12,7 +12,6 @@ function App() {
     localStorage.removeItem('user');
     setAuthenticated(false);
   };
-
   return (
     <Router>
       <div>
@@ -24,20 +23,14 @@ function App() {
             )}
             {authenticated && (
               <>
-           
                   <Link to="/">Home</Link>
-              
                   <Link to="/about">About</Link>
-              
                   <Link to="/contact">Contact</Link>
-              
                   <button onClick={handleLogout}>Logout</button>
-               
               </>
             )}
           </ul>
         </div>
-
         <Routes>
           {!authenticated && (
             <Route path="/" element={<Login setAuthenticated={setAuthenticated} />} />
@@ -50,7 +43,6 @@ function App() {
               {/* Add more routes as needed */}
             </>
           )}
-
           <Route path="/unauthorized" element={<Navigate to="/" />} />
         </Routes>
       </div>
