@@ -49,36 +49,30 @@ const Login = () => {
         </div>
       ) : (
         <div>
-          <h2>Login</h2>
-          <form className='main-log-in-screen'>
-            <label>
-              Username:
-              <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-              />
-            </label>
-            <br />
-            <label>
-              Password:
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </label>
-            <button type="button" onClick={handleLogin}>
-              Login
-            </button>
-            <br />
-            <button type="button" onClick={handleLogin}>
-              Create New Account
-            </button>
-            <button type="button" onClick={handleLogin}>
-              Password Reset
-            </button>
-          </form>
+         <h2 className="login-heading">Login</h2>
+         <form className='main-log-in-screen login-form'>
+    <label>
+      Username:
+      <input
+        type="text"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+    </label>
+    <br />
+    <label>
+      Password:
+      <input
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+    </label>
+    <button type="button" onClick={handleLogin}>
+      Login
+    </button>
+    <br />
+  </form>
         </div>
       )}
     </div>
