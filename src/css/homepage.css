@@ -1,61 +1,43 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
+  background: #3498db;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Header styles */
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
+
+.welcome-container {
   text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.header nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+h1 {
+  color: #333333;
 }
 
-.header nav ul li {
-  display: inline;
-  margin-right: 20px;
+p {
+  color: #555555;
 }
 
-.header nav a {
-  text-decoration: none;
-  color: #fff;
-}
-
-/* Hero section styles */
-.hero {
-  text-align: center;
-  padding: 2em;
-  background-color: #f4f4f4;
-}
-
-.ctaButton {
+.btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  margin-top: 20px;
   text-decoration: none;
+  background-color: #4caf50;
+  color: #ffffff;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-/* Generic section styles */
-.section {
-  margin: 2em;
-}
-
-/* Footer styles */
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+.btn:hover {
+  background-color: #45a049;
 }
