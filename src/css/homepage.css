@@ -36,8 +36,23 @@ p {
   color: #ffffff;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  margin: 10px;
 }
 
 .btn:hover {
+  background-color: #45a049;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
   background-color: #45a049;
 }

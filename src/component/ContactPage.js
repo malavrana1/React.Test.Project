@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/ContactUs.css'; // Remove the dot before "ContactUs.css"
+import '../css/ContactUs.css'; // Remove the dot before "ContactUs.css"
 
 const ContactPage = () => {
   return (
